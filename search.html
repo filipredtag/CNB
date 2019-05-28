@@ -1,0 +1,1080 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>New Brunswick site - Departments Contacts</title>
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" title="" />
+<link href="css/services.tabs.css" rel="stylesheet" type="text/css" media="print, projection, screen" />
+<link href="css/multimedia.tabs.css" rel="stylesheet" type="text/css" media="print, projection, screen" />
+ <!--[if lte IE 7]>
+        <link rel="stylesheet" href="css/jquery.tabs-ie.css" type="text/css" media="projection, screen">
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="projection, screen">
+        <![endif]-->
+<link href="css/bigger.css" rel="alternate stylesheet" type="text/css"  title="bigger" />
+<link href="css/smaller.css" rel="alternate stylesheet" type="text/css"  title="smaller" />
+
+<script src="http://cdn.jquerytools.org/1.0.2/jquery.tools.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.tabs.js"></script>
+<script type="text/javascript" src="js/styleswitcher.js"></script>
+
+<script type="text/javascript">
+            $(function() {
+
+           $('#multimedia_tabs').tabs({ fxFade: true, fxSpeed: 'fast' });
+                $('#service_tabs').tabs({ fxFade: true, fxSpeed: 'fast' });
+			  });
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".btn_dep").click(function(){
+		if ($(".btn_cat").hasClass("active")){
+			$("#panel_cat").slideUp("slow");
+			$(".btn_cat").toggleClass("active");
+		}
+		$("#panel_dep").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+	$(".btn_cat").click(function(){
+		if ($(".btn_dep").hasClass("active")){
+			$("#panel_dep").slideUp("slow");
+			$(".btn_dep").toggleClass("active");
+		}
+		$("#panel_cat").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+});
+</script>
+
+
+<script type="text/javascript">
+function ClearInput(value, Search_NB){ // This calls our function ClearInput, and the two variables we will need for it to function the original value and the id.
+var input = document.getElementById(Search_NB); // Gets the input field based on its id.
+
+if(value == input.value){ // If the default value is equal to the current value.
+input.value = ''; // Empty It.
+}else{ // Else the value is not equal to the current input field value.
+input.value = input.value; // Leave it the same.
+} // End Else.
+} // Close Function.
+</script>
+
+
+
+</head>
+
+<body class="twoColFixRtHdr">
+
+<div id="container">
+<div id="header">
+
+	<a href="#" title="home"><span id="logo_area"></span></a>
+
+    <div id="top_right_nav">
+    <div class="btn_dep">Departments</div>
+     <div class="btn_cat">Categories</div>
+
+
+     <div>
+        <form id="searchForm" method="get" name="CNB_search" title="Search New Brunswick site" action="http://www.urladdress.com/site-search/">
+
+      <label>New Brunswick Site Search</label>
+
+            <input id="Search_NB" class="searchText" type="text" value="Search" name="search New Brunswick site" onclick="this.value='';"  />
+
+          <input type="image" value="search" alt="Search" src="images/icon_search.gif" class="searchButton"/>
+
+          </form>
+
+	</div>
+
+
+    </div>
+
+    <div id="top_center_nav">
+		<ul>
+			<li><a href="#">Fran&#231;ais</a></li>
+            <li><a href="#">Contacts</a></li>
+        	<li><a href="#">GNB Home</a></li>
+        </ul>
+	</div>
+  <!-- end #header --></div>
+
+
+  <!-- department panel  **************************************************-->
+  <div id="panel_dep">
+
+  		<div id="bkgr_top"></div>
+
+        <div id="bkgr_span">
+
+            <ul class="first_list">
+            <li class="header">Departments</li>
+            	<li><a href="#">Agriculture and Aquaculture</a></li>
+                <li><a href="#">Attorney General</a></li>
+                <li><a href="#">Business New Brunswick</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Energy</a></li>
+                <li><a href="#">Enviroment</a></li>
+                <li><a href="#">Executive Council Office</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Fisheries</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Intergovernment Affairs</a></li>
+                <li><a href="#">Justice and Consumer Affairs</a></li>
+                <li><a href="#">Local Government</a></li>
+                <li><a href="#">Natural Resources</a></li>
+
+          </ul>
+
+          <ul>
+            <li class="inv header">Departments</li>
+            	<li><a href="#">Office of Human Resources</a></li>
+                <li><a href="#">Office of Self-sufficiency</a></li>
+                <li><a href="#">Office of Comptroller</a></li>
+                <li><a href="#">Office of Premier</a></li>
+                <li><a href="#">Post-secondary Education, Training and Labour</a></li>
+                <li><a href="#">Public Safety</a></li>
+                <li><a href="#">Social Development</a></li>
+                <li><a href="#">Supply and Services</a></li>
+                <li><a href="#">Tourism and Parks</a></li>
+                <li><a href="#">Transportation</a></li>
+                <li><a href="#">Wellness, Culture and Sport</a></li>
+
+          </ul>
+
+
+          <ul class="left_border right_border">
+            <li class="header">Agencies and Boards</li>
+            	<li><a href="#">Advisory Council on the Status of Women</a></li>
+                <li><a href="#">Communications New Brunswick</a></li>
+                <li><a href="#">Efficiency NB</a></li>
+                <li><a href="#">Emergency Measures Organization</a></li>
+                <li><a href="#">Labour and Employment Board</a></li>
+                <li><a href="#">New Brunswick Arts Board</a></li>
+                <li><a href="#">Premier's Council on the Status of Disabled Persons</a></li>
+
+
+
+          <li class="header_top">Secretariats</li>
+          		<li><a href="#">Aboriginal Affairs</a></li>
+                <li><a href="#">Community Non-profit Organizations</a></li>
+                <li><a href="#">Population Growth</a></li>
+                <li><a href="#">Senior and Health Aging</a></li>
+
+          </ul>
+
+
+          <ul>
+            <li class="header">Legislature</li>
+            	<li><a href="#">Auditor General</a></li>
+                <li><a href="#">Commissioner of Official Languages</a></li>
+                <li><a href="#">Conflicts of Interest Commissioner</a></li>
+                <li><a href="#">Consumer Advocate for Insurance</a></li>
+                <li><a href="#">Elections New Brunswick</a></li>
+                <li><a href="#">Legislative Assembly</a></li>
+                <li><a href="#">Lieutenant-Governor</a></li>
+                <li><a href="#">Ombudsman</a></li>
+
+
+         <li class="header_top">Courts in New Brunswick</li>
+
+            <li class="header_top">Other Government Websites</li>
+
+     </ul>
+
+      <div class="clearfloat"></div>
+
+      	</div>
+
+        <div id="bkgr_footer"></div>
+
+  </div>
+<!-- end of department panel  **************************************************-->
+
+
+<!-- category panel  **************************************************-->
+    <div id="panel_cat">
+  		<div id="bkgr_top2"></div>
+
+        <div id="bkgr_span2">
+
+            <ul class="first_list">
+
+            	<li><a href="#">Business and Finance</a></li>
+                <li><a href="#">Community and Culture</a></li>
+                <li><a href="#">Driving, Transportation and Roads</a></li>
+            </ul>
+
+
+            <ul class="left_border">
+
+            	<li><a href="#">Education and Training</a></li>
+				<li><a href="#">Employment</a></li>
+                <li><a href="#">Environment and Energy</a></li>
+                <li><a href="#">Government Operations</a></li>
+            </ul>
+
+
+            <ul class="left_border">
+
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Immigration</a></li>
+                <li><a href="#">Life Events</a></li>
+            </ul>
+
+
+            <ul class="left_border">
+
+            	<li><a href="#">Property, Land and Buildings</a></li>
+                <li><a href="#">Safety and Courts</a></li>
+                <li><a href="#">Social Programs</a></li>
+                <li><a href="#">Tourism and Recreation</a></li>
+            </ul>
+
+
+      			<div class="clearfloat"></div>
+
+      	</div>
+
+        <div id="bkgr_footer2"></div>
+    </div>
+<!-- end of category panel ******************************************-->
+
+
+
+  <div id="navigation">
+	<ul>
+    	<li><a href="#">For Residents</a></li>
+        <li><a href="#">For Business</a></li>
+        <li><a href="#">Visiting NB</a></li>
+        <li><a href="#">Your Government</a></li>
+        <li><a href="#">Employment</a></li>
+        <li><a href="#">About NB</a></li>
+        <li><a href="#">News</a></li>
+     </ul>
+</div>
+
+
+<div id="main_content_wrapper">
+
+	<div class="sidebar1">
+
+    <div class="tool_panel">
+
+
+		  <div id="styleswitcher">
+
+                                <a href="#"
+                        onclick="setActiveStyleSheet('smaller');
+                        return false;" title="make font smaller"><span class="smaller">&nbsp;</span></a>
+
+                        <a href="#"
+                        onclick="setActiveStyleSheet('');
+                        return false;" title="make font normal"><span class="normal">&nbsp;</span></a>
+
+                        <a href="#"
+                        onclick="setActiveStyleSheet('bigger');
+                        return false;" title="make font bigger"><span class="bigger">&nbsp;</span></a>
+
+        </div>
+
+
+            <div class="item">
+            	<a href="#"><img src="images/icon_envelope_white.gif" width="16" height="21" alt="email this page"/></a>
+            </div>
+
+            <div class="item">
+            	<a href="#"><img src="images/icon_print_white.gif" width="16" height="21" alt="print this page"  /></a>
+            </div>
+
+            <div class="item">
+            	<a href="#"><img src="images/icon_rss_white.gif" width="16" height="21" alt="subscribe to RSS feeds" /></a>
+            </div>
+
+             <div class="item" style="margin-right:0;">
+            	<a href="#"><img src="images/share_this_white.gif" width="127" height="21" alt="Share this page on delicious, diggs, msn and more"  /></a>
+            </div>
+
+        	<div class="clearfloat"></div>
+        </div>
+
+
+<!-- end #sidebar1 --></div>
+
+
+
+  <div id="mainContent">
+
+           <div class="breadcrumb">
+              <a href="#">GNB Home</a>
+
+      		</div>
+
+            <div id="single_column">
+                    <h1>Search</h1>
+			</div><!--end of single column-->
+
+
+    <div class="clearfloat"></div>
+
+<!-- end #mainContent --></div>
+
+
+    			<div id="tabular_wrapper" class="negative">
+
+         					<div id="service_tabs"> 
+
+                                        <ul>
+                                            <li><a href="#fragment-10"><span>GNB.ca</span></a></li>
+                                            <li><a href="#fragment-11"><span>Contacts</span></a></li>
+										 </ul>
+
+                                                <div id="fragment-10">
+                                                	
+                                                    
+                                                   <div id="search_box">
+                                                    <form id="search" method="get" name="search_form" title="Search New Brunswick" action="http://www.urladdress.com/site-search/">
+
+                                                        <label>New Brunswick Site Search</label>
+                                                        
+                                                       <div class="title">
+														 <span id="image_reset"><img src="images/icon_search_grey.gif" width="15" height="15" alt="" /></span>
+                                                        	Search GNB.ca
+                                                        </div>
+                                                        
+                                                        <input id="Search_String" class="searchText" type="text" value="Search" name="search New Brunswick Site" onclick="this.value='';"  />
+                                                        
+                                                       <label>Search Button</label>
+                                                      <input type="image" value="search" class="right" alt="Search" src="images/btn_search.gif"/>
+                        								<br /><br />
+                                                	</form>
+                                                    </div>
+	
+     
+     
+     
+     
+     
+      										<div class="sidebar1" style="padding:0;">
+                                                            <div class="image_box">
+                                                            <div class="links_header"><h3>Related Links</h3></div>
+                                        
+                                                               <div class="text_wrapper">
+                                                                <div class="link_nav">
+                                                                    <ul>
+                                                                      <li><a href="#">Road Conditions &#38; Webcams</a></li>
+                                                                        <li><a href="#">Medicare Registration</a></li>
+                                                                        <li><a href="#">Hunting Licence</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <br />
+                                                            <div class="image_box">
+                                                                 <img src="images/service.jpg" width="270" height="129" alt=""/>
+                                                    
+                                                    
+                                                                       <div class="text_wrapper">
+                                                    
+                                                                           <h1> <span class="more_link_blue"><a href="#">Save Time, Do it Online</a></span></h1>
+                                                    
+                                                                                <p>
+                                                                                Visit the<a href="http://www.snb.ca/" class="grey"> Service New Brunswick</a> website for these easy online transactions:
+                                                                                </p>
+
+                                                    
+                                                                    </div>
+                                                               </div>
+                                              </div>
+   
+     
+     
+                                                       <div id="search_left_nav">
+                                                       
+                                                       	<div class="title">refine results</div>
+                                                       
+                                                            	<h1 class="left_nav">Subject</h1>
+                                                            	<ul>
+                                                                	<li><a href="#">News</a></li>
+                                                                    <li><a href="#">Services</a></li>
+                                                                    <li><a href="#">Department</a></li>
+                                                                    <li><a href="#">Audio &#38; Video</a></li>
+                                                                    <li><a href="#">Images</a></li>
+                                                                 </ul>
+                                                                 
+                                                                 <h1 class="left_nav">Services</h1>
+                                                            	<ul>
+                                                                	<li><a href="#">News
+                                                                    <span class="grey">(2)</span></a></li>
+                                                                    <li><a href="#">Services</a></li>
+                                                                    <li><a href="#">Department</a></li>
+                                                                    <li><a href="#">Audio &#38; Video</a></li>
+                                                                    <li><a href="#">Images</a></li>
+                                                                 </ul>
+                                                                 
+                                                                 <h1 class="left_nav">Location</h1>
+                                                            	<ul>
+                                                                	<li><a href="#">News</a></li>
+                                                                    <li><a href="#">Services</a></li>
+                                                                    <li><a href="#">Department</a></li>
+                                                                    <li><a href="#">Audio &#38; Video</a></li>
+                                                                    <li><a href="#">Images</a></li>
+                                                                 </ul>
+                                                                 
+                                                                 <h1 class="left_nav">Type</h1>
+                                                            	<ul>
+                                                                	<li><a href="#">News</a></li>
+                                                                    <li><a href="#">Services</a></li>
+                                                                    <li class="filtered"><a href="#">Department
+                                                                    <span class="grey">(50)</span>
+                                                                    </a><a class="filter">remove</a></li>
+                                                                    <li><a href="#">Audio &#38; Video</a></li>
+                                                                    <li><a href="#">Images</a></li>
+                                                                 </ul>
+                                                                 
+                                                                
+                                                        
+                                                       </div>
+                                                       
+                                                       
+                                                       
+                                                      
+                                                       
+                                                       <div id="search_column">
+                                                       		
+                                                            
+                                                            <div class="pagination_top" style="padding-right:0">
+                                                            
+                                                            	<div class="item left">
+                                                                	<p class="image_reset">Results 1-10 of 10 for <span id="serch_query"><b>fishing</b></span></p>
+                                                                </div>    
+                
+                                                                <div class="item">
+                                                                    <a href="#">50</a>
+                                                                </div>
+                                                                
+                                                                <div class="item">
+                                                                    <a href="#">30</a>
+                                                                </div>
+                                                                
+                                                                <div class="item">
+                                                                    <a href="#" class="active">10</a>
+                                                                </div>
+                                                                
+                                                                
+                                                                <div id="class">
+                                                                    <span class="legend">Display:</span>
+                                                                </div>
+                                                                
+                                                      
+                                                                <div class="clearfloat"></div>
+                                                            
+                                                        </div>      
+                                                       		
+                                                            
+                                                            <div class="search_body">
+                                                            
+                                                            	<h2>aaa</h2>
+                                                            	<p>
+						 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <b>magna</b> aliqua. Ut enim ad minim veniam
+                                                                </p>
+															 		
+                                                             </div>
+                                                             
+                                                          <div class="search_footer">
+                                                             <span>www.example.com</span> &nbsp;| &nbsp;
+                                                             <span>07 November 2008</span>  &nbsp;| &nbsp;
+                                                             <a href="#">similar pages</a>
+                                                          </div>
+                                                          
+                                                          
+                                                          
+                                                           <div class="search_body">
+                                                            
+                                                            	<h2>aaa</h2>
+                                                            	<p>
+						 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <b>magna</b> aliqua. Ut enim ad minim veniam
+                                                                </p>
+															 		
+                                                             </div>
+                                                             
+                                                          <div class="search_footer">
+                                                             <span>www.example.com</span> &nbsp;| &nbsp;
+                                                             <span>07 November 2008</span>  &nbsp;| &nbsp;
+                                                             <a href="#">similar pages</a>
+                                                          </div>
+                                                            
+                                                            
+                                                            
+                                                            
+                                                             <div class="search_body">
+                                                            
+                                                            	<h2>aaa</h2>
+                                                            	<p>
+						 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <b>magna</b> aliqua. Ut enim ad minim veniam
+                                                                </p>
+															 		
+                                                             </div>
+                                                             
+                                                          <div class="search_footer">
+                                                             <span>www.example.com</span> &nbsp;| &nbsp;
+                                                             <span>07 November 2008</span>  &nbsp;| &nbsp;
+                                                             <a href="#">similar pages</a>
+                                                          </div>
+                                                            
+                                                            
+                                                            
+                                                            
+                                                             <div class="search_body">
+                                                            
+                                                            	<h2>aaa</h2>
+                                                            	<p>
+						 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <b>magna</b> aliqua. Ut enim ad minim veniam
+                                                                </p>
+															 		
+                                                             </div>
+                                                             
+                                                          <div class="search_footer">
+                                                             <span>www.example.com</span> &nbsp;| &nbsp;
+                                                             <span>07 November 2008</span>  &nbsp;| &nbsp;
+                                                             <a href="#">similar pages</a>
+                                                          </div>
+                                                            
+                                                            
+                                                            
+                                                            
+                                                             <div class="search_body">
+                                                            
+                                                            	<h2>aaa</h2>
+                                                            	<p>
+						 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <b>magna</b> aliqua. Ut enim ad minim veniam
+                                                                </p>
+															 		
+                                                             </div>
+                                                             
+                                                          <div class="search_footer">
+                                                             <span>www.example.com</span> &nbsp;| &nbsp;
+                                                             <span>07 November 2008</span>  &nbsp;| &nbsp;
+                                                             <a href="#">similar pages</a>
+                                                          </div>
+                                                            
+                                                            
+                                                            
+                                                            
+                                                             <div class="search_body">
+                                                            
+                                                            	<h2>aaa</h2>
+                                                            	<p>
+						 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <b>magna</b> aliqua. Ut enim ad minim veniam
+                                                                </p>
+															 		
+                                                             </div>
+                                                             
+                                                          <div class="search_footer">
+                                                             <span>www.example.com</span> &nbsp;| &nbsp;
+                                                             <span>07 November 2008</span>  &nbsp;| &nbsp;
+                                                             <a href="#">similar pages</a>
+                                                          </div>
+                                                            
+                                                            <br />
+                                                                
+                                                            <div class="pagination">
+        
+                                                            <div class="item">
+                                                                <span class="legend">Page:</span>
+                                                            </div> 
+                                                        
+                                                        
+                                                            <div class="item">
+                                                                <a href="#" class="active">1</a>
+                                                            </div> 
+                                                            
+                                                            <div class="item">
+                                                                <a href="#" >2</a>
+                                                            </div>
+                                                            
+                                                            <div class="item">
+                                                                <a href="#" >3</a>
+                                                            </div>
+                                                            
+                                                            <div class="item">
+                                                                <a href="#" >4</a>
+                                                            </div>
+                                                            
+                                                            <div class="item">
+                                                                <a href="#" >5</a>
+                                                            </div> 
+                                                            
+                                                            <div class="item">
+                                                                <a href="#" class="next">Next</a>
+                                                            </div> 
+                                                            
+                                                             <div class="item">
+                                                                <a href="#" class="last" >Last</a>
+                                                            </div>  
+                                                                
+                                                        <div class="clearfloat"></div>    
+                                                            
+                                                       </div>        
+                                                                
+                                           </div>
+                                           
+                                           
+                                           
+                               <div class="clearfloat"></div>           
+                                           
+                                           
+                                                            
+                  </div><!--end of fragment-10-->
+
+                                                 <div id="fragment-11">
+                                                 
+                                                 
+                                                 
+                                                 	 <div id="search_contacts">
+                                                    <form method="get" name="search_contacts" title="Search New Brunswick" action="http://www.urladdress.com/site-search/">
+
+                                                       
+                                                        
+                                                     
+                                                        
+                                                        <div class="title">
+														 <span class="image_reset"><img src="images/icon_search_grey.gif" width="15" height="15" alt="" /></span>
+                                                        	Search Contacts
+                                                        </div>
+                                                     
+                                                        
+                                                       <label>First Name</label>
+                                                        <input id="first_name" class="searchText" type="text" name="search New Brunswick Site" value="" />
+                                                        
+                                                        <label>Last Name</label>
+                                                        <input id="last_name" class="searchText" type="text" name="search New Brunswick Site" value="" style="margin-right:0" />
+                                                        
+                                                        <div class="clearfloat"></div>
+                                                       
+                                                        <select id="dep_selection" name="department selection">
+                                                        <option value="0" selected="selected" label=" Dep_name"> All Departments</option>
+                                                            <option label=" Dep_name" value="2"> Department 1</option>
+                                                            <option label=" Dep_name" value="1"> Department 2</option>
+                    
+                                                        </select>
+                                                       
+                                                       <input id="keywords" class="searchText keyword" type="text" name="search New Brunswick Site" value="" />
+                                                       
+                                                      
+                                                      <input type="image" value="search" class="right" alt="Search" src="images/btn_search.gif" style="margin-right:0"/>
+                        								
+                                                	</form>
+                                                    
+                                                    <div class="clearfloat"></div>
+                                                    
+                                                    </div>
+
+
+
+
+                                                        <div class="sidebar1" style="padding:0;">
+                                                            <div class="image_box">
+                                                            <div class="links_header"><h3>Quick Links</h3></div>
+                                        
+                                                               <div class="text_wrapper">
+                                                                <div class="link_nav">
+                                                                    <ul>
+                                                                        <li><a href="#">Road Conditions &#38; Webcams</a></li>
+                                                                        <li><a href="#">Medicare Registration</a></li>
+                                                                        <li><a href="#">Hunting Licence</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                         </div>
+                                        
+                                        
+                                                          <div class="clearfloat"></div>
+                                        
+                                        
+                                                         <div class="pagination_top">
+                
+                                                            <div class="item">
+                                                                    <a href="#">50</a>
+                                                                </div>
+                                                                
+                                                                <div class="item">
+                                                                    <a href="#">30</a>
+                                                                </div>
+                                                                
+                                                                <div class="item">
+                                                                    <a href="#" class="active">10</a>
+                                                                </div>
+                                                                
+                                                                
+                                                                <div class="item">
+                                                                    <span class="legend">Display:</span>
+                                                                </div>
+                                                                <div class="clearfloat"></div>
+                                                            
+                                                        </div>      
+                                        
+                                        
+                                        <table class="table_contacts" summary="List of contacts and locations">
+                                        
+                                                <tr>
+                                                  <th  scope="col" class="expanded"><h4>Contact</h4><span class="subtitle">Title</span></th>
+                                                  <th scope="col" class="expanded"><h4>Department</h4><span class="subtitle">Organization</span></th>
+                                                  <th  scope="col" class="expanded"><h4>Telephone</h4><span class="subtitle">Fax</span></th>
+                                                  <th  scope="col" class="expanded"><h4>Email</h4><span class="spacer" /></th>
+                                                </tr>
+                                                <tr>
+                                                  <td><a href="#">Abbott, Glen</a>
+                                                 </td>
+                                                  <td><a href="#">Office of the Attorney General</a></td>
+                                                  <td>P: (506) 652-1234</td>
+                                                  <td><a href="#">Abbott.Glen@gnb.ca</a></td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Assistant Deputy Attorney General</td>
+                                                  <td>Public Prosecutions (Branch)</td>
+                                                  <td>F: (506) 653-4456</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                                <tr class="alt">
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                        
+                                        
+                                                 <tr>
+                                                  <td><a href="#">Abbott, Lorranine</a>
+                                                 </td>
+                                                  <td><a href="#">Service New Brunswick</a></td>
+                                                  <td>P: (506) 653-3330</td>
+                                                  <td><a href="#">Abbott.loranine@gnb.ca</a></td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Assessor</td>
+                                                  <td>Assessment Services - Woodstock (Agency)</td>
+                                                  <td>F: (506) 444-3330</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                                <tr class="alt">
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                        
+                                        
+                                                 <tr>
+                                                  <td><a href="#">Abbott, Sandra</a>
+                                                 </td>
+                                                  <td><a href="#">Education</a></td>
+                                                  <td>P: (506) 652-5809</td>
+                                                  <td><a href="#">Belmor.david@gnb.ca</a></td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Coordinator</td>
+                                                  <td>Computers for Schools (Other)</td>
+                                                  <td>F: (506) 635-7281</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                                <tr class="alt">
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                        
+                                        
+                                                 <tr>
+                                                  <td><a href="#">Abel, Gary</a>
+                                                 </td>
+                                                  <td><a href="#">Moncton East, Electoral District 21</a></td>
+                                                  <td>P: (506) 453-2548</td>
+                                                  <td><a href="#">Abel.Gary@gnb.ca</a></td>
+                                                </tr>
+                                                <tr>
+                                                  <td>MLA</td>
+                                                  <td> </td>
+                                                  <td>F: (506) 453-3956</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                                <tr class="alt">
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                        
+                                                 <tr>
+                                                  <td><a href="#">Abraham, Elizabeth</a>
+                                                 </td>
+                                                  <td><a href="#">Education</a></td>
+                                                  <td>P: (506) 453-2548</td>
+                                                  <td><a href="#">Abraham.Elizabeth@gnb.ca</a></td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Assistant Deputy Minister</td>
+                                                  <td>Administration and Finance (Division)</td>
+                                                  <td>F: (506) 453-3956</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                                <tr class="alt">
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                        
+                                                 <tr>
+                                                  <td><a href="#">Acheson, Alan</a>
+                                                 </td>
+                                                  <td><a href="#">Transportation</a></td>
+                                                  <td>P: (506) 453-2548</td>
+                                                  <td><a href="#">Acheson.Alan@gnb.ca</a></td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Superintendent</td>
+                                                  <td>St. Stephen Office (District Sub-Office)</td>
+                                                  <td>F: (506) 453-3956</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                                <tr class="alt">
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                        
+                                                 <tr>
+                                                  <td><a href="#">Achorn, Daniel</a>
+                                                 </td>
+                                                  <td><a href="#">New Brunswick Liquor Corporation</a></td>
+                                                  <td>P: (506) 453-2548</td>
+                                                  <td><a href="#">Daniel.Achorn@gnb.ca</a></td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Accountant</td>
+                                                  <td>	New Brunswick Liquor Corporation Staff Accountant</td>
+                                                  <td>F: (506) 453-3956</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                                <tr class="alt">
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                        
+                                                 <tr>
+                                                  <td><a href="#">Ackerson, Ruth</a>
+                                                 </td>
+                                                  <td><a href="#">Transportation</a></td>
+                                                  <td>P: (506) 453-2548</td>
+                                                  <td><a href="#">Ackerson.Ruth@gnb.ca</a></td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Administrative Assistant</td>
+                                                  <td>NBHC - New Brunswick Highway Corporation  (Unit)</td>
+                                                  <td>F: (506) 453-3956</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                                <tr class="alt">
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                        
+                                                 <tr>
+                                                  <td><a href="#">O'Court, Kathleen</a>
+                                                 </td>
+                                                  <td><a href="#">Post-Secondary Education, Training and Labour</a></td>
+                                                  <td>P: (506) 453-2548</td>
+                                                  <td><a href="#">Acourt.Kathleen@gnb.ca</a></td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Circulation Clerk</td>
+                                                  <td>York Library Region (Regional Office )</td>
+                                                  <td>F: (506) 453-3956</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                                <tr class="alt">
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                        
+                                                 <tr>
+                                                  <td><a href="#">Acton, Derrick</a>
+                                                 </td>
+                                                  <td><a href="#">Transportation</a></td>
+                                                  <td>P: (506) 453-2548</td>
+                                                  <td><a href="#">Acton.Derrick@gnb.ca</a></td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Supervisor</td>
+                                                  <td>Highway (Unit)</td>
+                                                  <td>F: (506) 453-3956</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                                <tr >
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td>&nbsp;</td>
+                                                  <td><span class="spacer" /></td>
+                                                </tr>
+                                        
+                                              </table>
+                                        
+                                             <div class="pagination">
+        
+                                                <div class="item">
+                                                    <span class="legend">Page:</span>
+                                                </div> 
+                                            
+                                            
+                                                <div class="item">
+                                                    <a href="#" class="active">1</a>
+                                                </div> 
+                                                
+                                               <div class="item">
+                                                    <a href="#" >2</a>
+                                                </div>
+                                                
+                                                <div class="item">
+                                                    <a href="#" >3</a>
+                                                </div>
+                                                
+                                                <div class="item">
+                                                    <a href="#" >4</a>
+                                                </div>
+                                                
+                                                <div class="item">
+                                                    <a href="#" >5</a>
+                                                </div> 
+                                                
+                                                <div class="item">
+                                                    <a href="#" class="next">Next</a>
+                                                </div> 
+                                                
+                                                <div class="item">
+                                                    <a href="#" class="last" >Last</a>
+                                                </div>  
+                                                    
+                                            <div class="clearfloat"></div>    
+                                                
+                                           </div>         
+	   								</div>
+
+							  </div>
+    						</div><!--end of tabular_wrapper -->
+
+
+
+
+
+
+<div id="header_footer">
+            <div class="item">
+            	<a href="#"><img src="images/share_this.gif" width="128" height="29" alt="Share this page on delicious, diggs, msn and more" /></a>
+            </div>
+
+            <div class="item">
+            	<a href="#"><img src="images/icon_envelope.gif" width="16" height="29" alt="email this page" /></a>
+                <a href="#">Email this page</a>
+            </div>
+
+            <div class="item">
+            	<a href="#"><img src="images/icon_print.gif" width="16" height="29" alt="print this page"  /></a>
+                <a href="#">Print this page</a>
+            </div>
+
+            <div class="item">
+            	<a href="#"><img src="images/icon_rss_grey.gif" width="16" height="29" alt="subscribe this page" /></a>
+                <a href="#">Subscribe to this page</a>
+            </div>
+
+            
+
+     </div>
+
+
+
+</div><!--end of mainContent_Wrapper-->
+
+
+  <div id="footer">
+    <div id="bottom_nav">
+    	<ul class="right_border">
+        	<li class="header">GNB.ca</li>
+        	<li><a href="#">For Residents</a></li>
+            <li><a href="#">For Business</a></li>
+            <li><a href="#">Visiting NB</a></li>
+            <li><a href="#">Your Government</a></li>
+            <li><a href="#">Employment</a></li>
+            <li><a href="#">About NB</a></li>
+            <li><a href="#">Search</a></li>
+       </ul>
+
+       <ul>
+        	<li class="header">News &#38; Media</li>
+        	<li><a href="#">News</a></li>
+            <li><a href="#">Multimedia</a></li>
+            <li><a href="#">Alerts</a></li>
+       </ul>
+
+       <ul class="left_border right_border">
+        	<li class="header">Government</li>
+        	<li><a href="#">Departments</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Legislative Assembly of NB</a></li>
+            <li><a href="#">Premier's Office</a></li>
+            <li><a href="#">Actions &#38; Regulations</a></li>
+            <li><a href="#">Rights to Information</a></li>
+       </ul>
+
+       <ul>
+        	<li class="header">Site Help</li>
+        	<li><a href="#">Navigation</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Site Tools</a></li>
+            <li><a href="#">Provinces &#38; Territories</a></li>
+            <li><a href="#">Government of Canada</a></li>
+       </ul>
+
+    </div>
+
+
+       <div class="clearfloat"></div>
+
+    <div id="footer_disclaimer">
+
+     <span class="left">All content © 2009 Government of New Brunswick. All rights reserved.</span>
+
+        <div id="disclaimer_nav" class="right">
+                <ul>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+
+    </div>
+
+
+
+
+         <div class="clearfloat"></div>
+
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>

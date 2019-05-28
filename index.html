@@ -1,0 +1,795 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>New Brunswick main site</title>
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" title="main" />
+<link href="css/multimedia.tabs.css" rel="stylesheet" type="text/css" media="print, projection, screen" />
+ <!--[if lte IE 7]>
+        <link rel="stylesheet" href="css/jquery.tabs-ie.css" type="text/css" media="projection, screen">
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="projection, screen">
+        <![endif]-->
+
+
+<script src="http://cdn.jquerytools.org/1.0.2/jquery.tools.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.tabs.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+
+<script type="text/javascript">
+            $(function() {
+
+           $('#multimedia_tabs').tabs({ fxFade: true, fxSpeed: 'fast' });
+
+            });
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".btn_dep").click(function(){
+		if ($(".btn_cat").hasClass("active")){
+			$("#panel_cat").slideUp("slow");
+			$(".btn_cat").toggleClass("active");
+		}
+		$("#panel_dep").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+	$(".btn_cat").click(function(){
+		if ($(".btn_dep").hasClass("active")){
+			$("#panel_dep").slideUp("slow");
+			$(".btn_dep").toggleClass("active");
+		}
+		$("#panel_cat").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+});
+</script>
+
+<script type="text/javascript">
+function ClearInput(value, Search_NB){ // This calls our function ClearInput, and the two variables we will need for it to function the original value and the id.
+var input = document.getElementById(Search_NB); // Gets the input field based on its id.
+
+if(value == input.value){ // If the default value is equal to the current value.
+input.value = ''; // Empty It.
+}else{ // Else the value is not equal to the current input field value.
+input.value = input.value; // Leave it the same.
+} // End Else.
+} // Close Function.
+</script>
+
+
+
+</head>
+
+<body class="twoColFixRtHdr">
+
+<div id="container">
+
+<div id="header">
+
+	<a href="#" title="home"><span id="logo_area"></span></a>
+
+    <div id="top_right_nav">
+    <div class="btn_dep">Departments</div>
+     <div class="btn_cat">Categories</div>
+
+
+     <div>
+           <form id="searchForm" method="get" name="CNB_search" title="Search New Brunswick site" action="#">
+
+            <label>New Brunswick Site Search</label>
+
+            <input id="Search_NB" class="searchText" type="text" value="Search" name="search New Brunswick site" onclick="this.value='';"  />
+
+           <input type="image" value="search" alt="Search" src="images/icon_search.gif" class="searchButton"/>
+
+        </form>
+
+	</div>
+
+
+    </div><!--end of top_right_nav-->
+
+
+    <div id="top_center_nav">
+		<ul>
+			<li class="first"><a href="#">Fran&#231;ais</a></li>
+            <li><a href="#">Contacts</a></li>
+        	<li><a href="#">GNB Home</a></li>
+        </ul>
+	</div>
+
+
+  <!-- end #header --></div>
+
+
+  <!-- department panel  **************************************************-->
+  <div id="panel_dep">
+
+  		<div id="bkgr_top"></div>
+
+        <div id="bkgr_span">
+
+            <ul class="first_list">
+            <li class="header">Departments</li>
+            	<li><a href="#">Agriculture and Aquaculture</a></li>
+                <li><a href="#">Attorney General</a></li>
+                <li><a href="#">Business New Brunswick</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Energy</a></li>
+                <li><a href="#">Enviroment</a></li>
+                <li><a href="#">Executive Council Office</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Fisheries</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Intergovernment Affairs</a></li>
+                <li><a href="#">Justice and Consumer Affairs</a></li>
+                <li><a href="#">Local Government</a></li>
+                <li><a href="#">Natural Resources</a></li>
+
+          </ul>
+
+          <ul>
+            <li class="inv header">Departments</li>
+            	<li><a href="#">Office of Human Resources</a></li>
+                <li><a href="#">Office of Self-sufficiency</a></li>
+                <li><a href="#">Office of Comptroller</a></li>
+                <li><a href="#">Office of Premier</a></li>
+                <li><a href="#">Post-secondary Education, Training and Labour</a></li>
+                <li><a href="#">Public Safety</a></li>
+                <li><a href="#">Social Development</a></li>
+                <li><a href="#">Supply and Services</a></li>
+                <li><a href="#">Tourism and Parks</a></li>
+                <li><a href="#">Transportation</a></li>
+                <li><a href="#">Wellness, Culture and Sport</a></li>
+
+          </ul>
+
+
+          <ul class="left_border right_border">
+            <li class="header">Agencies and Boards</li>
+            	<li><a href="#">Advisory Council on the Status of Women</a></li>
+                <li><a href="#">Communications New Brunswick</a></li>
+                <li><a href="#">Efficiency NB</a></li>
+                <li><a href="#">Emergency Measures Organization</a></li>
+                <li><a href="#">Labour and Employment Board</a></li>
+                <li><a href="#">New Brunswick Arts Board</a></li>
+                <li><a href="#">Premier's Council on the Status of Disabled Persons</a></li>
+
+
+
+          <li class="header_top">Secretariats</li>
+          		<li><a href="#">Aboriginal Affairs</a></li>
+                <li><a href="#">Community Non-profit Organizations</a></li>
+                <li><a href="#">Population Growth</a></li>
+                <li><a href="#">Senior and Health Aging</a></li>
+
+          </ul>
+
+
+          <ul>
+            <li class="header">Legislature</li>
+            	<li><a href="#">Auditor General</a></li>
+                <li><a href="#">Commissioner of Official Languages</a></li>
+                <li><a href="#">Conflicts of Interest Commissioner</a></li>
+                <li><a href="#">Consumer Advocate for Insurance</a></li>
+                <li><a href="#">Elections New Brunswick</a></li>
+                <li><a href="#">Legislative Assembly</a></li>
+                <li><a href="#">Lieutenant-Governor</a></li>
+                <li><a href="#">Ombudsman</a></li>
+
+
+         <li class="header_top">Courts in New Brunswick</li>
+
+            <li class="header_top">Other Government Websites</li>
+
+     </ul>
+
+      <div class="clearfloat"></div>
+
+      	</div>
+
+        <div id="bkgr_footer"></div>
+
+  </div>
+<!-- end of department panel  **************************************************-->
+
+
+<!-- category panel  **************************************************-->
+    <div id="panel_cat">
+  		<div id="bkgr_top2"></div>
+
+        <div id="bkgr_span2">
+
+            <ul class="first_list">
+
+            	<li><a href="#">Business and Finance</a></li>
+                <li><a href="#">Community and Culture</a></li>
+                <li><a href="#">Driving, Transportation and Roads</a></li>
+            </ul>
+
+
+            <ul class="left_border">
+
+            	<li><a href="#">Education and Training</a></li>
+				<li><a href="#">Employment</a></li>
+                <li><a href="#">Environment and Energy</a></li>
+                <li><a href="#">Government Operations</a></li>
+            </ul>
+
+
+            <ul class="left_border">
+
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Immigration</a></li>
+                <li><a href="#">Life Events</a></li>
+            </ul>
+
+
+            <ul class="left_border">
+
+            	<li><a href="#">Property, Land and Buildings</a></li>
+                <li><a href="#">Safety and Courts</a></li>
+                <li><a href="#">Social Programs</a></li>
+                <li><a href="#">Tourism and Recreation</a></li>
+            </ul>
+
+
+      			<div class="clearfloat"></div>
+
+      	</div>
+
+        <div id="bkgr_footer2"></div>
+    </div>
+<!-- end of category panel ******************************************-->
+
+
+
+  <div id="navigation">
+	<ul>
+    	<li><a href="#">For Residents</a></li>
+        <li><a href="#">For Business</a></li>
+        <li><a href="#">Visiting NB</a></li>
+        <li><a href="#">Your Government</a></li>
+        <li><a href="#">Employment</a></li>
+        <li><a href="#">About NB</a></li>
+        <li><a href="#">News</a></li>
+    </ul>
+</div>
+
+
+<div id="main_content_wrapper">
+
+	<div class="sidebar1">
+
+    	<div class="image_box">
+  		  <div class="links_header"><h3>Quick Links</h3></div>
+
+                       <div class="text_wrapper">
+                        <div class="link_nav">
+                        	<ul>
+                            	<li><a href="#">Road Conditions &#38; Webcams</a></li>
+                                <li><a href="#">Medicare Registration</a></li>
+                                <li><a href="#">Hunting Licence</a></li>
+                                <li><a href="#">Fishing Licence</a></li>
+                                <li><a href="#">Driver's Licence</a></li>
+                                <li><a href="#">Social Assistance</a></li>
+                                <li><a href="#">SEED(seasonal)</a></li>
+                                <li><a href="#">Emergency Contacts</a></li>
+                                <li><a href="#">Public Libraries</a></li>
+                                <li><a href="#">Renting in NB</a></li>
+                            </ul>
+          				</div>
+                      </div>
+		</div>
+
+               
+
+           <div class="image_box">
+			
+           	  		<div class="alerts_header">
+                        <span class="right">
+                           <img src="images/icon_rss.gif" width="16" height="16" alt="subsribe to RSS feeds" id="icon_rss" /></span>
+                    <h3>Public Alerts</h3>
+                    
+                    </div>
+
+
+                       <div class="alerts">
+                        <span class="post_date">12 September 2009 9:05am AST</span>
+                		<h2>Updated: Forest Fire Watch</h2>
+                      </div>
+
+                      <div class="alerts">
+                        <span class="post_date">14 Saturday 2009 7:05am AST</span>
+                		<h2>Health Advisory / Recall of certain Maple Leaf, Shopsy's and Hygrade</h2>
+                      </div>
+
+
+                      <div class="alerts_more_link">
+                           <p>
+                           <span class="more_link"><a href="#">More Public alerts</a></span>
+                           </p>
+                      </div>
+
+      </div>
+
+
+    		<br />
+
+
+           <div class="image_box">
+       		 <img src="images/public_consultation.jpg" width="270" height="129" alt="" />
+
+
+                   <div class="text_wrapper">
+
+                     <h1> <span class="more_link_blue"><a href="#">Public Consultations</a></span></h1>
+
+                            <p>
+                            The provincial government is bringing people together to find ways to reduce poverty in New Brunswick.
+                            </p>
+
+             	</div>
+           </div>
+
+
+
+           <br />
+
+
+           <div class="image_box">
+       		 <img src="images/service.jpg" width="270" height="129" alt="" />
+
+
+                   <div class="text_wrapper">
+
+                       <h1> <span class="more_link_blue"><a href="http://www.snb.ca/">Service New Brunswick</a></span></h1>
+
+                            <p>
+                           Service New Brunswick provides quick, secure access to online transactions and products.
+                            </p>
+
+             	</div>
+           </div>
+
+
+           <br />
+
+
+           <div class="image_box">
+       		 <img src="images/sufficiency.jpg" width="270" height="129" alt="" />
+
+
+                   <div class="text_wrapper">
+
+                       <h1> <span class="more_link_blue"><a href="#">Self Sufficiency</a></span></h1>
+
+                            <p>
+                            New Brunswick is embarking on a period of transformational change that will lead our province to self-sufficiency.
+                            </p>
+
+       		 </div>
+           </div>
+
+
+
+
+
+
+
+
+<!-- end #sidebar1 --></div>
+
+
+
+  <div id="mainContent">
+
+
+     <div id="slideShow1">
+            <div class="slideCaption">
+                <h1>Be...Safe and Sound!</h1>
+                <div id="header_news">
+                	<p>The Government of New Brunswick recognizes the importance of safety on our highways</p>
+                    <p><span class="more_link_blue"><a href="#">Read More</a></span></p>
+                </div>    
+            </div>    
+        </div>
+
+<div class="news_header"><h3>Latest</h3></div>
+
+    		<div id="left_column">
+
+            	<div class="image_box">
+           	  		<img src="images/icon_premier.gif" width="210" height="88" alt="Shawn Graham" />
+
+                        <div class="text_wrapper">
+                            <h2><a href="#">A Message from the Premier of New Brunswick</a></h2>
+                            <p>
+                            Lorem ipsum dolor sit amet, consect elit...
+
+
+                            </p>
+                        </div>
+
+                </div>
+
+
+
+                <div class="box">
+
+                    <span class="post_date">10 October 2009 12:35am AST</span>
+                	<h2><a href="#">2,900 more people working last month, unemployment rate drops</a></h2>
+                    <p>
+                    There were 2,900 more New Brunswickers working in....
+
+                    </p>
+
+               </div>
+
+
+               <div class="box">
+
+                    <span class="post_date">01 October 2009 1:05am AST</span>
+                	<h2><a href="#">Students benefiting from revamped French Second Language program</a></h2>
+                    <p>
+                    Test results reveal more N.B. students than ever before...
+
+                    </p>
+
+               </div>
+
+
+
+               <div class="box">
+
+                    <span class="post_date">29 September 2009 4:05am AST</span>
+                	<h2><a href="#">$500,000 investment to be made in Charlo infrastructure</a></h2>
+                    <p>
+                   Strategic infrastructure project in the Village of Charlo...
+
+                    </p>
+
+               </div>
+
+
+         	<div class="box_no_border">
+               <p>
+               <span class="more_link"><a href="#">More news</a></span>
+               </p>
+            </div>
+<br />
+
+    </div><!--end of left column -->
+
+
+    <div id="center_column">
+
+   	          <img src="images/main_pic.jpg" width="340" height="167" alt="" />
+
+        <div class="box">
+          <h1><a href="#">H1N1 Flu Virus Update</a></h1>
+                <p>
+The N.B. Department of Health is closely monitoring the outbreak of H1N1 Flu Virus, internationally as well as in Canada and New Brunswick...<br /> <br />
+
+                  <span class="more_link_blue">
+                  <span id="none">
+                  <img src="images/icon_video.gif" width="24" height="14" alt="Watch Video from the Department of Health"/>
+                  </span>
+                  <a href="#">Watch video from the Department of Health</a>
+                  </span>
+
+                </p>
+        </div>
+
+
+
+
+
+          <div class="box">
+          <h1><a href="#"> Let's Right The Future</a></h1>
+                <p>
+ have a chance to make a healthier future.&nbsp; It starts with making the choice to eat better and be more active with our kids...<br /> 
+                </p>
+        </div>
+
+
+
+
+          <div class="box">
+          <h1><a href="#"> Safe Highway Construction</a></h1>
+                <p>
+ Each and every summer day, in approximately 150 locations province-wide, road construction crews are working to make our highways safer for you...<br /> 
+ </p>
+        </div>
+
+
+
+          <div class="box" style="border:none">
+               <p>
+               <span class="more_link"><a href="#">More features</a></span>
+               </p>
+          </div>
+    </div><!--end of center column-->
+
+
+
+   								<div id="multimedia_tabs">
+   								<ul >
+                                
+										<li><a href="#fragment-14">Videos</a></li>
+                                    <li><a href="#fragment-15">Photos</a></li>
+                            	<li class="more_link" id="outsider"><a href="#">More multimedia</a></li>
+                                   
+
+
+                            	</ul>
+
+
+
+										<div id="fragment-14" class="left">
+
+<div class="item_multimedia">
+                                                                <img src="images/video_placeholder.gif" width="130" height="67" alt=""/>
+                                                                <h2>Festival Acadien</h2>
+                                                                <span class="post_date">12:00</span>
+                                                                    <p class="multimedia">
+                                                                        lorem ipsum condor
+                                                                        zakol lubanovo
+                                                                        <span>...</span>
+
+                                                                    </p>
+                                                                    
+                                                                    <p>
+
+                                                                      <span class="more_link"><a href="#">Watch video</a></span>
+
+                                                                    </p>
+
+   										  </div>
+
+
+                                           <div class="item_multimedia">
+                                                                <img src="images/video_3.jpg" width="130" height="67" alt=""/>
+                                                                <h2>Festival Acadien</h2>
+                                                                <span class="post_date">12:00</span>
+                                                                   <p class="multimedia">
+                                                                        lorem ipsum condor
+                                                                        zakol lubanovo
+                                                                        <span>...</span>
+
+                                                                    </p>
+                                                                    
+                                                                    <p>
+
+                                                                      <span class="more_link"><a href="#">Watch video</a></span>
+
+                                                                    </p>
+
+   										  </div>
+
+
+                                           <div class="item_multimedia">
+                                                                <img src="images/video_2.jpg" width="130" height="67" alt="" />
+                                                                <h2>Festival Acadien</h2>
+                                                                <span class="post_date">12:00</span>
+                                                                   <p class="multimedia">
+                                                                        lorem ipsum condor
+                                                                        zakol lubanovo
+                                                                        <span>...</span>
+
+                                                                    </p>
+                                                                    
+                                                                    <p>
+
+                                                                      <span class="more_link"><a href="#">Watch video</a></span>
+
+                                                                    </p>
+
+   										  </div>
+
+                                            <div class="item_multimedia">
+                                                                <img src="images/video_1.jpg" width="130" height="67" alt="" />
+                                                                <h2>Festival Acadien</h2>
+                                                                <span class="post_date">12:00</span>
+                                                                   <p class="multimedia">
+                                                                        lorem ipsum condor
+                                                                        zakol lubanovo
+                                                                        <span>...</span>
+
+                                                                    </p>
+
+                                                                      <span class="more_link"><a href="#">Watch video</a></span>
+
+                                                                    </p>
+
+     										</div>
+
+     									</div>
+
+<!--PHOTOS PANEL STARTS *****************************************************************************************************************************************-->
+
+                                        <div id="fragment-15" class="left">
+
+
+
+                                              <div class="item_multimedia">
+                                                                <img src="images/video_placeholder.gif" width="130" height="67" alt="" />
+                                                                <h2>Festival Acadien</h2>
+
+
+     										</div>
+
+
+                                        </div>
+
+                       </div>
+
+
+
+    <div class="clearfloat"></div>
+
+<!-- end #mainContent --></div>
+
+
+
+
+     <div id="header_footer">
+            <div class="item">
+            	<a href="#"><img src="images/share_this.gif" width="128" height="29" alt="Share this page on delicious, diggs, msn and more" /></a>
+            </div>
+
+            <div class="item">
+            	<a href="#"><img src="images/icon_envelope.gif" width="16" height="29" alt="email this page" /></a>
+                <a href="#">Email this page</a>
+            </div>
+
+            <div class="item">
+            	<a href="#"><img src="images/icon_print.gif" width="16" height="29" alt="print this page"  /></a>
+                <a href="#">Print this page</a>
+            </div>
+
+            <div class="item">
+            	<a href="#"><img src="images/icon_rss_grey.gif" width="16" height="29" alt="subscribe this page" /></a>
+                <a href="#">Subscribe to this page</a>
+            </div>
+
+            
+
+     </div>
+
+
+
+
+</div><!--end of mainContent_Wrapper-->
+
+
+  <div id="footer">
+    <div id="bottom_nav">
+    	<ul class="right_border">
+        	<li class="header">GNB.ca</li>
+        	<li><a href="#">For Residents</a></li>
+            <li><a href="#">For Business</a></li>
+            <li><a href="#">Visiting NB</a></li>
+            <li><a href="#">Your Government</a></li>
+            <li><a href="#">Employment</a></li>
+            <li><a href="#">About NB</a></li>
+            <li><a href="#">Search</a></li>
+       </ul>
+
+       <ul>
+        	<li class="header">News &#38; Media</li>
+        	<li><a href="#">News</a></li>
+            <li><a href="#">Multimedia</a></li>
+            <li><a href="#">Alerts</a></li>
+       </ul>
+
+       <ul class="left_border right_border">
+        	<li class="header">Government</li>
+        	<li><a href="#">Departments</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Legislative Assembly of NB</a></li>
+            <li><a href="#">Premier's Office</a></li>
+            <li><a href="#">Actions &#38; Regulations</a></li>
+            <li><a href="#">Rights to Information</a></li>
+       </ul>
+
+       <ul>
+        	<li class="header">Site Help</li>
+        	<li><a href="#">Navigation</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Site Tools</a></li>
+            <li><a href="#">Provinces &#38; Territories</a></li>
+            <li><a href="#">Government of Canada</a></li>
+       </ul>
+
+    </div>
+
+
+       <div class="clearfloat"></div>
+
+    <div id="footer_disclaimer">
+
+     <span class="left">All content © 2009 Government of New Brunswick. All rights reserved.</span>
+
+        
+
+            <div id="disclaimer_nav" class="right">
+                <ul>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+
+        
+
+    </div>
+
+
+
+
+         <div class="clearfloat"></div>
+
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$.slideshow(
+			{
+				container : 'slideShow1',
+				loader: 'images/loading.gif',
+				
+				linksClass: 'pagelinks',
+				
+				fadeDuration : 400,
+				activeLinkClass: 'activeSlide',
+				nextslideClass: 'nextSlide',
+				prevslideClass: 'prevSlide',
+				
+				
+				autoplay: 4,
+				random: false,
+				images : [
+					{
+						src: 'images/slide1.jpg'
+						
+					},
+					{
+						src: 'images/slide2.jpg'
+						
+					},
+					{
+						src: 'images/slide1.jpg'
+						
+					},
+					{
+						src: 'images/slide2.jpg'
+						
+					},
+					{
+						src: 'images/slide1.jpg'
+						
+					}
+				]
+			}
+		)
+		
+	
+	}
+);
+</script>
+		<script language="JavaScript" type="text/javascript">var client_id = 1;</script>
+	<script language="JavaScript" src="http://stats.byspirit.ro/track.js" type="text/javascript"></script>
+</body>
+</html>
+
+
+
+
+
